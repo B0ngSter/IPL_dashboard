@@ -22,6 +22,9 @@ npm run lint
 
 ```
 
+I first ran "node index/js" which will convert the matches.csv file to matches.json file, then used that JSON file in whole project.
+
+
 libraries/frameworks used:-
 vue.js
 vuetify.js
