@@ -6,16 +6,16 @@
   </h3>
   <v-row>
     <v-col cols="12" md="6">
-      <teamvteam class="chartCard" ></teamvteam>
+      <teamvteam :match="match" class="chartCard" ></teamvteam>
     </v-col>
     <v-col cols="12" md="6">
-      <toss class="chartCard3" :match="match"></toss>
+      <toss :match="match" class="chartCard3"></toss>
     </v-col>
     <v-col cols="12" md="6">
-      <teamOnvenue  class="chartCard" />
+      <teamOnvenue :match="match" class="chartCard" />
     </v-col>
     <v-col cols="12" md="6">
-      <winperseason class="chartCard2"  />
+      <winperseason  :match="match" class="chartCard2"  />
     </v-col>
   </v-row>
   <h2 class="text-center">

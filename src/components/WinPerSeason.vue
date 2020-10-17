@@ -7,9 +7,11 @@
   class="mx-auto custom_card"
   max-width="1044"
 >
+  
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <bar-chart :chart-data="barChartData"  :options="barChartOptions" :height="300" />
+      <h1>{{ test }}</h1>
         <v-select
           class="my-2"
           :items="data"
@@ -26,17 +28,20 @@
 
 <script>
 import BarChart from './RadarChart.js';
-import match from './matches.json';
 
 export default {
   components: {
     BarChart
   },
+  props: {
+    match: {
+      type: Object
+    }
+  },
   data() {
   return {
     csvtoArr: null,
     barChartData: null,
-    match: match,
     barChartOptions: {
       responsive: true,
       legend: {

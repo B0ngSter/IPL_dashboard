@@ -45,15 +45,18 @@
 
 <script>
 import BarChart from './BarChart.js';
-import match from './matches.json';
 
 export default {
   components: {
     BarChart
   },
+  props: {
+    match: {
+      type: Object
+    }
+  },
   data() {
   return {
-      match: match,
       barChartData: null,
       barChartOptions: {
         responsive: true,

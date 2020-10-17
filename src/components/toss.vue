@@ -29,16 +29,19 @@
 </template>
 
 <script>
-import match from "./matches.json";
 import PieChart from "./PieChart.js";
 export default {
   name: "App",
   components: {
     PieChart
   },
+  props: {
+    match: {
+      type: Object
+    }
+  },
   data() {
     return {
-      match: match,
       select_team: 'Mumbai Indians',
       data: [
         { text: 'Mumbai Indians' },

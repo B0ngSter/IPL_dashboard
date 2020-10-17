@@ -30,16 +30,19 @@
 
 <script>
 import BarChart from './BarChart.js';
-import match from './matches.json';
 
 export default {
   components: {
     BarChart
   },
+  props: {
+    match: {
+      type: Object
+    }
+  },
   data() {
   return {
       csvtoArr: null,
-      match: match,
       barChartData: null,
       venue: 'Maharashtra Cricket Association Stadium',
       barChartOptions: {
