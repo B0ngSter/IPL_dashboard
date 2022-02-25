@@ -1,10 +1,9 @@
 <template>
 <v-app id="app2">
-  <v-container>
-  <h3 class="text-center">
+  <h3 class="text-center mt-5">
     IPL dashboard from 2008-2017
   </h3>
-  <v-row>
+  <v-row class="mt-5">
     <v-col cols="12" md="6">
       <teamvteam :match="match" class="chartCard" ></teamvteam>
     </v-col>
@@ -18,10 +17,9 @@
       <winperseason  :match="match" class="chartCard2"  />
     </v-col>
   </v-row>
-  <h2 class="text-center">
+  <h2 class="text-center mb-5">
     Made by Nitesh Poonia
   </h2>
-</v-container>
 </v-app>
 </template>
 
